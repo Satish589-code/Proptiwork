@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# ProptiWork Insights
 
-## Project info
+ProptiWork Insights is an employee productivity tracking and analytics platform built and maintained by Satish Prajapati.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
 
-## How can I edit this code?
+This project combines a React dashboard with a Chrome extension to help teams monitor work sessions, track browsing activity during active sessions, manage tasks, and review productivity trends in one place.
 
-There are several ways of editing your application.
+## Key Features
 
-**Use Lovable**
+- Secure authentication with Supabase
+- Role-based dashboards for admins and employees
+- Work session and activity tracking
+- Productivity analytics and reporting views
+- Task management for teams and individual users
+- Chrome extension for browser activity capture
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- React Query
+- Supabase
+- Chrome Extension Manifest V3
 
-**Use your preferred IDE**
+## Project Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- `src/` - main web application
+- `proptiwork-extension/` - browser extension for activity tracking
+- `public/` - static assets
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Environment Variables
 
-# Step 3: Install the necessary dependencies.
-npm i
+Create or update your `.env` file with:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```env
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+VITE_SUPABASE_PUBLISHABLE_KEY=
+```
+
+### Run the App
+
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build the App
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm run build
+```
 
-**Use GitHub Codespaces**
+## Chrome Extension Setup
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Open `chrome://extensions/`
+2. Enable `Developer mode`
+3. Click `Load unpacked`
+4. Select the `proptiwork-extension` folder
 
-## What technologies are used for this project?
+## Author
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Satish Prajapati  
+Email: satish1prajapati0157@gmail.com
