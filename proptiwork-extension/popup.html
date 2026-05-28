@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProptiWork Tracker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 260px;
+        padding: 15px;
+      }
+
+      h3 {
+        margin: 0 0 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 8px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 8px 12px;
+        margin-top: 10px;
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .status {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .section {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>ProptiWork Tracker</h3>
+
+    <!-- LOGIN SECTION -->
+    <div class="section">
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="loginBtn">Login</button>
+    </div>
+
+    <!-- TRACKING STATUS -->
+    <div class="section">
+      <div class="status">
+        Tracking: <span id="trackingStatus">Checking...</span>
+      </div>
+      <button id="toggleTracking">Toggle Tracking</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ProptiWork Tracker",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "idle",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+   
+    "default_popup": "popup.html"
+  },
+  
+  "host_permissions": ["<all_urls>"]
+}
